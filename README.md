@@ -108,26 +108,19 @@ docker pull --platform linux/amd64 cleanstart/cadvisor:latest
 docker pull --platform linux/arm64 cleanstart/cadvisor:latest
 ```
 
-**Resources & Documentation**
+**
+### Resources & Documentation  
+Essential links and resources for further information:
 
-**Essential Links**
-* **CleanStart Website**: https://www.cleanstart.com
-* **cAdvisor GitHub Repository**: https://github.com/google/cadvisor
-* **cAdvisor Documentation**: https://github.com/google/cadvisor/tree/master/docs
-
-**Reference:**
-
-CleanStart All Images: https://images.cleanstart.com
- 
-CleanStart Community Images: https://hub.docker.com/u/cleanstart
- 
-View Provenance, Specifications, SBOM, Signature at https://images.cleanstart.com/images/cadvisor
- 
-Other location for Community image: https://hub.docker.com/r/cleanstart/cadvisor
+- CleanStart Website: https://www.cleanstart.com
+- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/cAdvisor
+- CleanStart All Images: https://images.cleanstart.com
+- CleanStart Community Images: https://hub.docker.com/u/cleanstart
+- Other location for Community image: https://hub.docker.com/r/cleanstart/cAdvisor
 
 ---
 
-# Vulnerability Disclaimer
+### Vulnerability Disclaimer
 
 CleanStart offers Docker images that include third-party open-source libraries and packages maintained by independent contributors. While CleanStart maintains these images and applies industry-standard security practices, it cannot guarantee the security or integrity of upstream components beyond its control.
 
