@@ -1,14 +1,14 @@
-**CleanStart Container for cAdvisorcAdvisor (Container Advisor) provides container users with resource usage and performance characteristics of running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This container includes enterprise-grade security hardening and monitoring capabilities optimized for production deployments.
+- *CleanStart Container for cAdvisorcAdvisor (Container Advisor) provides container users with resource usage and performance characteristics of running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This container includes enterprise-grade security hardening and monitoring capabilities optimized for production deployments.
 
 📌 CleanStart Foundation**: Security-hardened, minimal base OS designed for enterprise containerized environments.
  Key Features* Real-time container resource monitoring and metrics collection
-* Native Prometheus metrics endpoint integration
-* Historical performance data analysis and storage
-* Enterprise-grade security with RBAC support
+- Native Prometheus metrics endpoint integration
+- Historical performance data analysis and storage
+- Enterprise-grade security with RBAC support
  Common Use Cases* Container resource usage monitoring in production environments
-* Performance analysis and capacity planning for containerized applications
-* Resource utilization tracking for Kubernetes clusters
-* Container metrics collection for observability platforms
+- Performance analysis and capacity planning for containerized applications
+- Resource utilization tracking for Kubernetes clusters
+- Container metrics collection for observability platforms
  Quick StartPull Latest ImageDownload the container image from the registry
 
 ```bash
@@ -61,37 +61,26 @@ securityContext:
     drop: ['ALL']
 ```
  Best Practices* Use specific image tags for production (avoid latest)
-* Configure resource limits: memory and CPU constraints
-* Enable read-only root filesystem when possible
-* Run containers with non-root user (--user 1000:1000)
-* Use --security-opt=no-new-privileges flag
-* Regularly update container images for security patches
-* Implement proper network segmentation
-* Monitor container metrics for anomalies
+- Configure resource limits: memory and CPU constraints
+- Enable read-only root filesystem when possible
+- Run containers with non-root user (--user 1000:1000)
+- Use --security-opt=no-new-privileges flag
+- Regularly update container images for security patches
+- Implement proper network segmentation
+- Monitor container metrics for anomalies
  Architecture SupportMulti-Platform Images```bash
 docker pull --platform linux/amd64 cleanstart/cadvisor:latest
 docker pull --platform linux/arm64 cleanstart/cadvisor:latest
 ```
  ###
 
+## Resources
 
-
-### Resources
-### Resources
-- Official Documentation: https://github.com/google/cadvisor
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/cAdvisor
-- Docker Hub: https://hub.docker.com/r/cleanstart/cAdvisor
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart Community Images: https://hub.docker.com/u/cleanstart
-
-
-### Resources
-- Official Documentation: https://github.com/google/cadvisor
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/cAdvisor
-- Docker Hub: https://hub.docker.com/r/cleanstart/cAdvisor
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart Community Images: https://hub.docker.com/u/cleanstart
-
+- **Official Documentation:** https://github.com/google/cadvisor
+- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/cAdvisor
+- **Docker Hub:** https://hub.docker.com/r/cleanstart/cAdvisor
+- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
 
