@@ -4,7 +4,7 @@ cAdvisor (Container Advisor) provides container users with resource usage and pe
 
 **📌 CleanStart Foundation:** Security-hardened, minimal base OS designed for enterprise containerized environments.
 
-**Image Path:** `cleanstart/cadvisor`
+**Image Path:** `ghcr.io/cleanstart-containers/cadvisor`
 
 **Registry:** CleanStart Registry
 
@@ -49,8 +49,8 @@ Typical scenarios where this container excels:
 
 Download the container image from the registry:
 ```bash
-docker pull cleanstart/cadvisor:latest
-docker pull cleanstart/cadvisor:latest-dev
+docker pull ghcr.io/cleanstart-containers/cadvisor:latest
+docker pull ghcr.io/cleanstart-containers/cadvisor:latest-dev
 ```
 
 ### Basic Run
@@ -64,7 +64,7 @@ docker run -d --name cadvisor \
   -v /var/lib/docker/:/var/lib/docker:ro \
   -v /dev/disk/:/dev/disk:ro \
   -p 8080:8080 \
-  cleanstart/cadvisor:latest
+  ghcr.io/cleanstart-containers/cadvisor:latest
 ```
 
 ### Production Deployment
@@ -81,7 +81,7 @@ docker run -d --name cadvisor-prod \
   -v /var/lib/docker/:/var/lib/docker:ro \
   -v /dev/disk/:/dev/disk:ro \
   -p 8080:8080 \
-  cleanstart/cadvisor:latest
+  ghcr.io/cleanstart-containers/cadvisor:latest
 ```
 
 ### Volume Mount
@@ -92,14 +92,14 @@ docker run -d \
   -v /:/rootfs:ro \
   -v /var/run:/var/run:ro \
   -v /sys:/sys:ro \
-  cleanstart/cadvisor:latest
+  ghcr.io/cleanstart-containers/cadvisor:latest
 ```
 
 ### Port Forwarding
 
 Run with metrics endpoint exposed:
 ```bash
-docker run -d -p 8080:8080 cleanstart/cadvisor:latest
+docker run -d -p 8080:8080 ghcr.io/cleanstart-containers/cadvisor:latest
 ```
 
 ---
@@ -152,8 +152,8 @@ CleanStart images support multiple architectures to ensure compatibility across 
 
 ### Multi-Platform Images
 ```bash
-docker pull --platform linux/amd64 cleanstart/cadvisor:latest
-docker pull --platform linux/arm64 cleanstart/cadvisor:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/cadvisor:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/cadvisor:latest
 ```
 
 ---
